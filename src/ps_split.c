@@ -14,12 +14,12 @@
 
 void	ps_max_btoa(t_pile *a, t_pile *b)
 {
-	if (ps_get_max(b) == *pile_content(b, b->size - 1))
+	if (ps_get_max(b) == *pile_get(b, b->size - 1))
 		ps_p(a, b, "pa\n");
 	else
 	{
-		if (*pile_content(b, b->size - 1) == *pile_content(a, 0) + 1 ||
-				*pile_content(b, b->size - 1) == 1)
+		if (*pile_get(b, b->size - 1) == *pile_get(a, 0) + 1 ||
+				*pile_get(b, b->size - 1) == 1)
 		{
 			ps_p(a, b, "pa\n");
 			ps_r(a, "ra\n");
@@ -37,12 +37,12 @@ void	ps_split_btoa(t_pile *a, t_pile *b, int average, int size)
 			ps_max_btoa(a, b);
 		else
 		{
-			if (average <= *pile_content(b, b->size - 1))
+			if (average <= *pile_get(b, b->size - 1))
 				ps_p(a, b, "pa\n");
 			else
 			{
-				if (*pile_content(b, b->size - 1) == *pile_content(a, 0) + 1 ||
-						*pile_content(b, b->size - 1) == 1)
+				if (*pile_get(b, b->size - 1) == *pile_get(a, 0) + 1 ||
+						*pile_get(b, b->size - 1) == 1)
 				{
 					ps_p(a, b, "pa\n");
 					ps_r(a, "ra\n");
@@ -61,7 +61,7 @@ void	ps_split_atob(t_pile *a, t_pile *b, int average, int size)
 	i = -1;
 	while (++i < size)
 	{
-		if (average > *pile_content(a, a->size - 1))
+		if (average > *pile_get(a, a->size - 1))
 			ps_p(b, a, "pb\n");
 		else
 			ps_r(a, "ra\n");
@@ -74,7 +74,7 @@ void	ps_rotation_b(t_pile *b)
 
 	i = -1;
 	while (++i < (int)b->size)
-		if (*pile_content(b, i) == ps_get_max(b))
+		if (*pile_get(b, i) == ps_get_max(b))
 			break ;
 	if (i <= (int)b->size / 2)
 		ps_r_r(b, "rrb\n");

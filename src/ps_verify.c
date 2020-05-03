@@ -21,7 +21,7 @@ int				ps_already_exist(t_pile *v, int int_arg)
 		i = -1;
 		while (++i < v->size)
 		{
-			if (*pile_content(v, i) == int_arg)
+			if (*pile_get(v, i) == int_arg)
 				return (1);
 		}
 	}

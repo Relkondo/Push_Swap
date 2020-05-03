@@ -19,8 +19,8 @@ int			ps_get_size(t_pile *p, int limit)
 	if (p->size == 0)
 		return (0);
 	i = 0;
-	while (*pile_content(p, (int)p->size - 1 - i) <= limit &&
-			*pile_content(p, (int)p->size - 1 - i) != 1)
+	while (*pile_get(p, (int)p->size - 1 - i) <= limit &&
+			*pile_get(p, (int)p->size - 1 - i) != 1)
 		i++;
 	return (i);
 }
@@ -35,7 +35,7 @@ int			ps_get_average(t_pile *p)
 	i = p->size;
 	sum = 0;
 	while (--i >= 0)
-		sum += *pile_content(p, i);
+		sum += *pile_get(p, i);
 	return ((int)(sum / (int)p->size + 0.5));
 }
 
@@ -48,10 +48,10 @@ int			ps_get_average_section(t_pile *p, int top_value)
 		return (0);
 	i = 0;
 	sum = 0;
-	while (*pile_content(p, (int)p->size - 1 - i) <= top_value &&
-			*pile_content(p, (int)p->size - 1 - i) != 1)
+	while (*pile_get(p, (int)p->size - 1 - i) <= top_value &&
+			*pile_get(p, (int)p->size - 1 - i) != 1)
 	{
-		sum += *pile_content(p, (int)p->size - 1 - i);
+		sum += *pile_get(p, (int)p->size - 1 - i);
 		i++;
 	}
 	return ((int)(sum / i + 0.5));
@@ -68,8 +68,8 @@ int			ps_get_max(t_pile *p)
 	max = 0;
 	while (++i < p->size)
 	{
-		if (max < *pile_content(p, i))
-			max = *pile_content(p, i);
+		if (max < *pile_get(p, i))
+			max = *pile_get(p, i);
 	}
 	return (max);
 }
@@ -81,12 +81,12 @@ int			ps_get_min(t_pile *p)
 
 	if (p->size == 0)
 		return (0);
-	min = *pile_content(p, 0);
+	min = *pile_get(p, 0);
 	i = -1;
 	while (++i < p->size)
 	{
-		if (min > *pile_content(p, i))
-			min = *pile_content(p, i);
+		if (min > *pile_get(p, i))
+			min = *pile_get(p, i);
 	}
 	return (min);
 }

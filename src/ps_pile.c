@@ -6,7 +6,7 @@
 /*   By: scoron <scoron@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 06:21:17 by scoron            #+#    #+#             */
-/*   Updated: 2020/05/03 08:23:10 by scoron           ###   ########.fr       */
+/*   Updated: 2020/05/03 13:22:09 by scoron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,7 @@ int		pile_insert(t_pile *self, void const *data, size_t dtlen, size_t index)
 	ft_memmove(pile_get(self, index + dtlen),
 			pile_get(self, index),
 			pile_offset(self->size - index));
-
-    ft_memcpy(pile_get(self, index),
+	ft_memcpy(pile_get(self, index),
 			data,
 			pile_offset(dtlen));
 	self->size += dtlen;

@@ -6,7 +6,7 @@
 /*   By: scoron <scoron@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 06:29:12 by scoron            #+#    #+#             */
-/*   Updated: 2020/05/03 09:22:56 by scoron           ###   ########.fr       */
+/*   Updated: 2020/05/03 13:26:12 by scoron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,50 +85,47 @@ typedef struct	s_pile
 	size_t		max;
 }				t_pile;
 
-void	ps_s(t_pile *p, char *to_print);
-void	ps_p(t_pile *receiver, t_pile *sender, char *to_print);
-void	ps_r(t_pile *p, char *to_print);
-void	ps_r_r(t_pile *p, char *to_print);
-void	ps_rrr(t_pile *p1, t_pile *p2, char *to_print);
-void	ps_rotation_b(t_pile *b);
-void	ps_ss(t_pile *p1, t_pile *p2, char *to_print);
-void	ps_rr(t_pile *p1, t_pile *p2, char *to_print);
-void	ps_push_swap_small(t_pile *a, t_pile *b);
-void	ps_push_swap_init(t_pile *a, t_pile *b);
-void	ps_roll_back_and_forth(t_pile *a, t_pile *b, int top_value);
-void	ps_roll(t_pile *a, t_pile *b, int top_value);
-void	ps_split_atob(t_pile *a, t_pile *b, int average, int size);
-void	ps_split_btoa(t_pile *a, t_pile *b, int average, int size);
-char	ch_code_ope(char *l);
-void	ch_print_stacks(t_pile *a, t_pile *b, char ope);
-int		ps_parse_arg(t_pile *a, int i, int ac, char **av);
-void	ps_push_swap(t_pile *a, t_pile *b);
-int		ps_get_min(t_pile *p);
-int		ps_get_max(t_pile *p);
-int		ps_get_average(t_pile *p);
-int		ps_is_sorted(t_pile *p);
-int		ch_parse_options(char **argv, t_pile *options);
-int		ps_get_size(t_pile *p, int limit);
-int		ps_get_average_section(t_pile *p, int top_value);
-void	ps_index(t_pile *a, t_pile *b);
-void	ps_sort(t_pile *p, int left, int right);
-void	ps_small_sort(t_pile *p, int is_a);
-void	ps_small_rotate_a(t_pile *a);
-void	ps_small_split(t_pile *a, t_pile *b);
-int		pile_resize(t_pile *self, size_t new_size);
-void	pile_clear(t_pile *self);
-int		pile_addall(t_pile *self, void const *data, size_t datalen);
-int		pile_insert(t_pile *self, void const *data, size_t dtlen, size_t index);
-int		pile_reserve(t_pile *self, size_t size);
-void	pile_popback(t_pile *self, size_t len);
-int		pile_popindex(t_pile *self, size_t index, size_t len);
-t_pile	new_pile();
-int		*pile_content(t_pile *p, size_t i);
-int		*pile_end(t_pile *p);
-int		*pile_get(t_pile *p, int i);
-int		pile_offset(int i);
-
-//TO DELETE
-void				display_pile(t_pile *p, char *msg);
+void			ps_s(t_pile *p, char *to_print);
+void			ps_p(t_pile *receiver, t_pile *sender, char *to_print);
+void			ps_r(t_pile *p, char *to_print);
+void			ps_r_r(t_pile *p, char *to_print);
+void			ps_rrr(t_pile *p1, t_pile *p2, char *to_print);
+void			ps_rotation_b(t_pile *b);
+void			ps_ss(t_pile *p1, t_pile *p2, char *to_print);
+void			ps_rr(t_pile *p1, t_pile *p2, char *to_print);
+void			ps_push_swap_small(t_pile *a, t_pile *b);
+void			ps_push_swap_init(t_pile *a, t_pile *b);
+void			ps_roll_back_and_forth(t_pile *a, t_pile *b, int top_value);
+void			ps_roll(t_pile *a, t_pile *b, int top_value);
+void			ps_split_atob(t_pile *a, t_pile *b, int average, int size);
+void			ps_split_btoa(t_pile *a, t_pile *b, int average, int size);
+char			ch_code_ope(char *l);
+void			ch_print_stacks(t_pile *a, t_pile *b, char ope);
+int				ps_parse_arg(t_pile *a, int i, int ac, char **av);
+void			ps_push_swap(t_pile *a, t_pile *b);
+int				ps_get_min(t_pile *p);
+int				ps_get_max(t_pile *p);
+int				ps_get_average(t_pile *p);
+int				ps_is_sorted(t_pile *p);
+int				ch_parse_options(char **argv, t_pile *options);
+int				ps_get_size(t_pile *p, int limit);
+int				ps_get_average_section(t_pile *p, int top_value);
+void			ps_index(t_pile *a, t_pile *b);
+void			ps_sort(t_pile *p, int left, int right);
+void			ps_small_sort(t_pile *p, int is_a);
+void			ps_small_rotate_a(t_pile *a);
+void			ps_small_split(t_pile *a, t_pile *b);
+int				pile_resize(t_pile *self, size_t new_size);
+void			pile_clear(t_pile *self);
+int				pile_addall(t_pile *self, void const *data, size_t datalen);
+int				pile_insert(t_pile *self, void const *data,
+				size_t dtlen, size_t index);
+int				pile_reserve(t_pile *self, size_t size);
+void			pile_popback(t_pile *self, size_t len);
+int				pile_popindex(t_pile *self, size_t index, size_t len);
+t_pile			new_pile();
+int				*pile_get(t_pile *p, size_t i);
+int				*pile_end(t_pile *p);
+int				pile_offset(int i);
 
 #endif

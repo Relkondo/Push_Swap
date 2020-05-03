@@ -6,7 +6,7 @@
 /*   By: scoron <scoron@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 06:20:06 by scoron            #+#    #+#             */
-/*   Updated: 2020/05/03 09:13:50 by scoron           ###   ########.fr       */
+/*   Updated: 2020/05/03 13:21:01 by scoron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,21 +25,33 @@ char		ch_code_ope(char *l)
 	return (fl);
 }
 
-void		ch_color(char ope, int pos, t_pile *p, char *msg, int type)
+void		ch_color_a(char ope, int pos, t_pile *p, char *msg)
 {
 	size_t si;
 
 	si = p->size;
-	if ((ope && ope % 10 != type && ((pos + 1 == (int)(si) && ope / 10 != 3) ||
+	if ((ope && ope % 10 != 2 && ((pos + 1 == (int)(si) && ope / 10 != 3) ||
 					(pos == 0 && ope / 10 == 3) ||
 					(pos + 2 == (int)(si) && ope / 10 == 1))))
 		msg = ft_strnjoin(3, FMT_BGREEN, msg, FMT_OFF);
-	ft_printf(msg, *pile_content(p, pos));
+	ft_printf(msg, *pile_get(p, pos));
+}
+
+void		ch_color_b(char ope, int pos, t_pile *p, char *msg)
+{
+	size_t si;
+
+	si = p->size;
+	if ((ope && ope % 10 != 1 && ((pos + 1 == (int)(si) && ope / 10 != 3) ||
+					(pos == 0 && ope / 10 == 3) ||
+					(pos + 2 == (int)(si) && ope / 10 == 1))))
+		msg = ft_strnjoin(3, FMT_BGREEN, msg, FMT_OFF);
+	ft_printf(msg, *pile_get(p, pos));
 }
 
 char		*ch_color2(char *color, char *msg)
 {
-    return ft_strnjoin(3, color, msg, FMT_OFF);
+	return (ft_strnjoin(3, color, msg, FMT_OFF));
 }
 
 void		ch_print_stacks(t_pile *a, t_pile *b, char ope)
@@ -54,11 +66,11 @@ void		ch_print_stacks(t_pile *a, t_pile *b, char ope)
 	while (i >= 0 && j >= 0)
 	{
 		if (div >= 0 && i--)
-            ch_color(ope, i, a, "%6d ", 2);
+			ch_color_a(ope, i, a, "%6d ");
 		else
 			ft_printf("%6c ", ' ');
 		if (div <= 0 && j--)
-            ch_color(ope, j, b, "%6d\n", 1);
+			ch_color_b(ope, j, b, "%6d\n");
 		else
 			ft_printf("%6c\n", ' ');
 		div -= div > 0 ? 1 : 0;

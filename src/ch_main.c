@@ -6,7 +6,7 @@
 /*   By: scoron <scoron@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 06:15:13 by scoron            #+#    #+#             */
-/*   Updated: 2020/05/03 09:16:50 by scoron           ###   ########.fr       */
+/*   Updated: 2020/05/03 13:21:49 by scoron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int				ch_parse_options(char **argv, t_pile *options)
 		j = 0;
 		while (argv[i][++j])
 			if ((k = exist_in(argv[i][j], possible_options)) != -1)
-				*pile_content(options, k) = 1;
+				*pile_get(options, k) = 1;
 			else
 				return (i);
 	}
@@ -105,13 +105,13 @@ static int		ch_handle_lines(t_pile *a, t_pile *b, t_pile *opt)
 			return (-1);
 		}
 		ch_operation(line, a, b);
-		if (*pile_content(opt, OPT_V))
+		if (*pile_get(opt, OPT_V))
 		{
-			*pile_content(opt, OPT_A) ? system("sleep 0.5") : 0;
-			ope = *pile_content(opt, OPT_C) ? ch_code_ope(line) : 0;
-			if (*pile_content(opt, OPT_C))
+			*pile_get(opt, OPT_A) ? system("sleep 0.5") : 0;
+			ope = *pile_get(opt, OPT_C) ? ch_code_ope(line) : 0;
+			if (*pile_get(opt, OPT_C))
 				ft_printf(ft_strnjoin(3, FMT_RED, "%s\n", FMT_OFF), line);
-			else 
+			else
 				ft_printf("%s\n", line);
 			ch_print_stacks(a, b, ope);
 		}
