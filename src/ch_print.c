@@ -33,8 +33,15 @@ void		ch_color_a(char ope, int pos, t_pile *p, char *msg)
 	if ((ope && ope % 10 != 2 && ((pos + 1 == (int)(si) && ope / 10 != 3) ||
 					(pos == 0 && ope / 10 == 3) ||
 					(pos + 2 == (int)(si) && ope / 10 == 1))))
-		msg = ft_strnjoin(3, FMT_BGREEN, msg, FMT_OFF);
-	ft_printf(msg, *pile_get(p, pos));
+	{
+        msg = ft_strnjoin(3, FMT_BGREEN, msg, FMT_OFF);
+        ft_printf(msg, *pile_get(p, pos));
+        free(msg);
+	}
+	else
+	{
+	    ft_printf(msg, *pile_get(p, pos));
+    }
 }
 
 void		ch_color_b(char ope, int pos, t_pile *p, char *msg)
@@ -45,8 +52,15 @@ void		ch_color_b(char ope, int pos, t_pile *p, char *msg)
 	if ((ope && ope % 10 != 1 && ((pos + 1 == (int)(si) && ope / 10 != 3) ||
 					(pos == 0 && ope / 10 == 3) ||
 					(pos + 2 == (int)(si) && ope / 10 == 1))))
-		msg = ft_strnjoin(3, FMT_BGREEN, msg, FMT_OFF);
-	ft_printf(msg, *pile_get(p, pos));
+    {
+        msg = ft_strnjoin(3, FMT_BGREEN, msg, FMT_OFF);
+        ft_printf(msg, *pile_get(p, pos));
+        free(msg);
+    }
+    else
+    {
+        ft_printf(msg, *pile_get(p, pos));
+    }
 }
 
 char		*ch_color2(char *color, char *msg)
@@ -59,6 +73,7 @@ void		ch_print_stacks(t_pile *a, t_pile *b, char ope)
 	int		div;
 	int		i;
 	int		j;
+	char    *res;
 
 	div = (int)a->size - (int)(b->size);
 	i = a->size == 0 ? 0 : (int)(a->size);
@@ -76,5 +91,7 @@ void		ch_print_stacks(t_pile *a, t_pile *b, char ope)
 		div -= div > 0 ? 1 : 0;
 		div += div < 0 ? 1 : 0;
 	}
-	ft_printf(ch_color2(FMT_BLUE, "%6c %6c\n%6c %6c\n\n"), '_', '_', 'a', 'b');
+	res = ch_color2(FMT_BLUE, "%6c %6c\n%6c %6c\n\n");
+	ft_printf(res, '_', '_', 'a', 'b');
+    free(res);
 }

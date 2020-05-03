@@ -114,7 +114,10 @@ int				get_next_line(const int fd, char **line)
 	else if (!(ft_strchr(fd_chain->res, '\n')))
 		checkread = ft_joinfree(fd_chain);
 	if (checkread < 0)
+    {
+        fd_chain = ft_delfd(fd_chain);
 		return (-1);
+    }
 	*line = ft_strcutuntil(&(fd_chain->res), '\n');
 	if (checkread == 0)
 		fd_chain = ft_delfd(fd_chain);

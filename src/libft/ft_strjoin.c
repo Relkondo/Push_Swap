@@ -37,13 +37,18 @@ char		*ft_strnjoin(int nb_str, ...)
 {
 	va_list	va;
 	int		i;
-	char	*res;
+	char	*temp;
+	char    *res;
 
 	va_start(va, nb_str);
 	i = 0;
-	res = ft_strnew(0);
+	temp = ft_strnew(0);
 	while (++i <= nb_str)
-		res = ft_strjoin(res, va_arg(va, char *));
+	{
+		res = ft_strjoin(temp, va_arg(va, char *));
+		free(temp);
+		temp = res;
+	}
 	va_end(va);
 	return (res);
 }

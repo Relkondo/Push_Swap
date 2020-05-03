@@ -18,8 +18,11 @@ char	*ft_strshorten(char **s, int start, int len)
 	int		len_s;
 
 	len_s = (int)ft_strlen(*s);
-	if (!s || !(*s) || start >= len_s)
-		return (NULL);
+	if (!s || !(*s) || start >= len_s) {
+	    if (*s)
+	        free(*s);
+        return (NULL);
+    }
 	if (start + len > len_s)
 		len = len_s - start;
 	if (!(newstr = ft_strsub(*s, start, len)))
