@@ -6,7 +6,7 @@
 /*   By: scoron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 15:04:24 by scoron            #+#    #+#             */
-/*   Updated: 2020/05/03 07:23:55 by scoron           ###   ########.fr       */
+/*   Updated: 2020/05/03 19:20:33 by scoron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char		*ft_strnjoin(int nb_str, ...)
 	va_list	va;
 	int		i;
 	char	*temp;
-	char    *res;
+	char	*res;
 
 	va_start(va, nb_str);
 	i = 0;

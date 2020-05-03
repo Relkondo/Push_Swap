@@ -21,6 +21,7 @@ BASE_SRC = ps_init \
           ps_operators \
           ps_operators2 \
           ch_print \
+          ch_colors \
           ps_split \
           ps_rotation \
           ps_index \

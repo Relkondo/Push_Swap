@@ -6,7 +6,7 @@
 /*   By: scoron <scoron@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 06:20:06 by scoron            #+#    #+#             */
-/*   Updated: 2020/05/03 13:21:01 by scoron           ###   ########.fr       */
+/*   Updated: 2020/05/03 19:00:47 by scoron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,15 +33,9 @@ void		ch_color_a(char ope, int pos, t_pile *p, char *msg)
 	if ((ope && ope % 10 != 2 && ((pos + 1 == (int)(si) && ope / 10 != 3) ||
 					(pos == 0 && ope / 10 == 3) ||
 					(pos + 2 == (int)(si) && ope / 10 == 1))))
-	{
-        msg = ft_strnjoin(3, FMT_BGREEN, msg, FMT_OFF);
-        ft_printf(msg, *pile_get(p, pos));
-        free(msg);
-	}
+		print_green(pos, p, msg);
 	else
-	{
-	    ft_printf(msg, *pile_get(p, pos));
-    }
+		ft_printf(msg, *pile_get(p, pos));
 }
 
 void		ch_color_b(char ope, int pos, t_pile *p, char *msg)
@@ -52,20 +46,9 @@ void		ch_color_b(char ope, int pos, t_pile *p, char *msg)
 	if ((ope && ope % 10 != 1 && ((pos + 1 == (int)(si) && ope / 10 != 3) ||
 					(pos == 0 && ope / 10 == 3) ||
 					(pos + 2 == (int)(si) && ope / 10 == 1))))
-    {
-        msg = ft_strnjoin(3, FMT_BGREEN, msg, FMT_OFF);
-        ft_printf(msg, *pile_get(p, pos));
-        free(msg);
-    }
-    else
-    {
-        ft_printf(msg, *pile_get(p, pos));
-    }
-}
-
-char		*ch_color2(char *color, char *msg)
-{
-	return (ft_strnjoin(3, color, msg, FMT_OFF));
+		print_green(pos, p, msg);
+	else
+		ft_printf(msg, *pile_get(p, pos));
 }
 
 void		ch_print_stacks(t_pile *a, t_pile *b, char ope)
@@ -73,7 +56,6 @@ void		ch_print_stacks(t_pile *a, t_pile *b, char ope)
 	int		div;
 	int		i;
 	int		j;
-	char    *res;
 
 	div = (int)a->size - (int)(b->size);
 	i = a->size == 0 ? 0 : (int)(a->size);
@@ -91,7 +73,5 @@ void		ch_print_stacks(t_pile *a, t_pile *b, char ope)
 		div -= div > 0 ? 1 : 0;
 		div += div < 0 ? 1 : 0;
 	}
-	res = ch_color2(FMT_BLUE, "%6c %6c\n%6c %6c\n\n");
-	ft_printf(res, '_', '_', 'a', 'b');
-    free(res);
+	print_blue();
 }

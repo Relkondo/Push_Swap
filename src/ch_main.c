@@ -6,7 +6,7 @@
 /*   By: scoron <scoron@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 06:15:13 by scoron            #+#    #+#             */
-/*   Updated: 2020/05/03 16:25:50 by scoron           ###   ########.fr       */
+/*   Updated: 2020/05/03 19:13:36 by scoron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,6 @@ int				ch_check_line(char *line)
 static int		ch_handle_lines(t_pile *a, t_pile *b, t_pile *opt)
 {
 	char		*line;
-	char        *res;
 	char		ope;
 
 	while (get_next_line(0, &line))
@@ -110,19 +109,12 @@ static int		ch_handle_lines(t_pile *a, t_pile *b, t_pile *opt)
 		{
 			*pile_get(opt, OPT_A) ? system("sleep 0.5") : 0;
 			ope = *pile_get(opt, OPT_C) ? ch_code_ope(line) : 0;
-			if (*pile_get(opt, OPT_C)) {
-			    res = ft_strnjoin(3, FMT_RED, "%s\n", FMT_OFF);
-				ft_printf(res, line);
-			    free(res);
-                }
-			else {
-				ft_printf("%s\n", line);
-                }
+			*pile_get(opt, OPT_C) ? print_red(line) : ft_printf("%s\n", line);
 			ch_print_stacks(a, b, ope);
 		}
 		free(line);
 	}
-    free(line);
+	free(line);
 	return (0);
 }
 

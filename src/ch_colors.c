@@ -1,49 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ps_helper.c                                        :+:      :+:    :+:   */
+/*   ch_colors.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: scoron <scoron@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 06:24:37 by scoron            #+#    #+#             */
-/*   Updated: 2020/05/03 18:37:59 by scoron           ###   ########.fr       */
+/*   Updated: 2020/05/03 18:56:18 by scoron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-t_pile		new_pile(void)
+void		print_green(int pos, t_pile *p, char *msg)
 {
-	t_pile	newpile;
+	char	*res;
 
-	newpile.size = 0;
-	newpile.max = 0;
-	newpile.content = NULL;
-	return (newpile);
-}
-
-int			*pile_get(t_pile *p, size_t i)
-{
-	if (i > p->size)
-		return (NULL);
-	return ((int*)(p->content + i * sizeof(int)));
-}
-
-int			pile_offset(int i)
-{
-	return (i * sizeof(int));
-}
-
-int			*pile_end(t_pile *p)
-{
-	return ((p)->content + (p)->size * sizeof(int));
-}
-
-void		join_print(int pos, t_pile *p, char *msg, char *color)
-{
-	char *res;
-
-	res = ft_strnjoin(3, color, msg, FMT_OFF);
+	res = ft_strnjoin(3, FMT_BGREEN, msg, FMT_OFF);
 	ft_printf(res, *pile_get(p, pos));
+	free(res);
+}
+
+void		print_blue(void)
+{
+	char	*res;
+
+	res = ft_strnjoin(3, FMT_BLUE, "%6c %6c\n%6c %6c\n\n", FMT_OFF);
+	ft_printf(res, '_', '_', 'a', 'b');
+	free(res);
+}
+
+void		print_red(char *line)
+{
+	char	*res;
+
+	res = ft_strnjoin(3, FMT_RED, "%s\n", FMT_OFF);
+	ft_printf(res, line);
 	free(res);
 }

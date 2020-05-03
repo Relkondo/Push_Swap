@@ -6,7 +6,7 @@
 /*   By: scoron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/23 17:54:28 by scoron            #+#    #+#             */
-/*   Updated: 2020/05/03 07:29:18 by scoron           ###   ########.fr       */
+/*   Updated: 2020/05/03 18:56:47 by scoron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,10 +114,10 @@ int				get_next_line(const int fd, char **line)
 	else if (!(ft_strchr(fd_chain->res, '\n')))
 		checkread = ft_joinfree(fd_chain);
 	if (checkread < 0)
-    {
-        fd_chain = ft_delfd(fd_chain);
+	{
+		fd_chain = ft_delfd(fd_chain);
 		return (-1);
-    }
+	}
 	*line = ft_strcutuntil(&(fd_chain->res), '\n');
 	if (checkread == 0)
 		fd_chain = ft_delfd(fd_chain);

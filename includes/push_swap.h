@@ -6,7 +6,7 @@
 /*   By: scoron <scoron@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 06:29:12 by scoron            #+#    #+#             */
-/*   Updated: 2020/05/03 13:26:12 by scoron           ###   ########.fr       */
+/*   Updated: 2020/05/03 19:18:42 by scoron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -127,5 +127,8 @@ t_pile			new_pile();
 int				*pile_get(t_pile *p, size_t i);
 int				*pile_end(t_pile *p);
 int				pile_offset(int i);
+void			print_blue(void);
+void			print_red(char *line);
+void			print_green(int pos, t_pile *p, char *msg);
 
 #endif
