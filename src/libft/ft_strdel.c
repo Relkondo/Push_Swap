@@ -6,7 +6,7 @@
 /*   By: scoron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/12 16:11:18 by scoron            #+#    #+#             */
-/*   Updated: 2018/11/14 17:01:49 by scoron           ###   ########.fr       */
+/*   Updated: 2020/05/03 07:25:10 by scoron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,12 @@ void	ft_strdel(char **as)
 	*as = 0;
 }
 
-void    ft_strlst_free(char **strlst)
+void	ft_strlst_free(char **strlst)
 {
-    int		i;
+	int	i;
 
-    i = -1;
-    while (strlst[++i] != '\0')
-        free(strlst[i]);
-    free(strlst);
+	i = -1;
+	while (strlst[++i] != '\0')
+		free(strlst[i]);
+	free(strlst);
 }

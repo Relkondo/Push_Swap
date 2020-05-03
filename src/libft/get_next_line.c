@@ -6,7 +6,7 @@
 /*   By: scoron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/23 17:54:28 by scoron            #+#    #+#             */
-/*   Updated: 2018/12/05 21:19:39 by scoron           ###   ########.fr       */
+/*   Updated: 2020/05/03 07:29:18 by scoron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,8 @@ static t_chain	*ft_delfd(t_chain *fd_chain)
 		fd_chain = fd_chain->previous;
 	else if (fd_chain->next)
 		fd_chain = fd_chain->next;
-    	else
-        	fd_chain = NULL;
+	else
+		fd_chain = NULL;
 	tmp->previous = NULL;
 	tmp->next = NULL;
 	free(tmp);

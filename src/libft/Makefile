@@ -6,7 +6,7 @@
 #    By: scoron <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 17:44:30 by scoron            #+#    #+#              #
-#    Updated: 2019/03/06 17:39:32 by scoron           ###   ########.fr        #
+#    Updated: 2020/05/03 06:38:27 by scoron           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -102,7 +102,7 @@ $(NAME) : $(OBJS)
 		@ranlib $(NAME)
 
 %.o : %.c
-	@gcc -Wall -Wextra -Werror -Iincludes -c $< -o $@
+	@clang -Wall -Wextra -Werror -Iincludes -c $< -o $@
 
 clean :
 	@/bin/rm -f $(OBJS)
