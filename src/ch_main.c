@@ -6,13 +6,13 @@
 /*   By: scoron <scoron@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 06:15:13 by scoron            #+#    #+#             */
-/*   Updated: 2020/05/03 06:20:01 by scoron           ###   ########.fr       */
+/*   Updated: 2020/05/03 09:16:50 by scoron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int ch_parse_options(char **argv, t_pile *options)
+int				ch_parse_options(char **argv, t_pile *options)
 {
 	int			i;
 	int			j;
@@ -23,21 +23,21 @@ int ch_parse_options(char **argv, t_pile *options)
 	k = 0;
 	data = 0;
 	while (possible_options[k++])
-        pile_addall(options, &data, 1);
+		pile_addall(options, &data, 1);
 	i = 0;
 	while (argv[++i] && argv[i][0] == '-' && ft_strlen(argv[i]) > 1)
 	{
 		j = 0;
 		while (argv[i][++j])
 			if ((k = exist_in(argv[i][j], possible_options)) != -1)
-                PILE_CONTENT(options, k) = 1;
+				*pile_content(options, k) = 1;
 			else
 				return (i);
 	}
 	return (i);
 }
 
-void ch_operation(char *line, t_pile *a, t_pile *b)
+void			ch_operation(char *line, t_pile *a, t_pile *b)
 {
 	if (ft_strnequ(line, "sa", 3))
 		ps_s(a, "");
@@ -46,7 +46,7 @@ void ch_operation(char *line, t_pile *a, t_pile *b)
 	else if (ft_strnequ(line, "ss", 3))
 		ps_ss(a, b, "");
 	else if (ft_strnequ(line, "pa", 3))
-		ps_p(a, b,"");
+		ps_p(a, b, "");
 	else if (ft_strnequ(line, "pb", 3))
 		ps_p(b, a, "");
 	else if (ft_strnequ(line, "ra", 3))
@@ -63,7 +63,7 @@ void ch_operation(char *line, t_pile *a, t_pile *b)
 		ps_rrr(a, b, "");
 }
 
-int ch_check_line(char *line)
+int				ch_check_line(char *line)
 {
 	if (ft_strnequ(line, "sa", 3))
 		return (1);
@@ -91,10 +91,10 @@ int ch_check_line(char *line)
 		return (0);
 }
 
-static int ch_handle_lines(t_pile *a, t_pile *b, t_pile *opt)
+static int		ch_handle_lines(t_pile *a, t_pile *b, t_pile *opt)
 {
-	char	*line;
-	char     ope;
+	char		*line;
+	char		ope;
 
 	while (get_next_line(0, &line))
 	{
@@ -105,31 +105,36 @@ static int ch_handle_lines(t_pile *a, t_pile *b, t_pile *opt)
 			return (-1);
 		}
 		ch_operation(line, a, b);
-		if (PILE_CONTENT(opt, OPT_V)) {
-            PILE_CONTENT(opt, OPT_A) ? system("sleep 0.5") : 0;
-            ope = PILE_CONTENT(opt, OPT_C) ? ch_code_ope(line) : 0;
-            ft_printf(PILE_CONTENT(opt, OPT_C) ? ft_strnjoin(3, FMT_RED, "%s\n", FMT_OFF) : "%s\n", line);
-            ch_print_stacks(a, b, ope);
-        }
+		if (*pile_content(opt, OPT_V))
+		{
+			*pile_content(opt, OPT_A) ? system("sleep 0.5") : 0;
+			ope = *pile_content(opt, OPT_C) ? ch_code_ope(line) : 0;
+			if (*pile_content(opt, OPT_C))
+				ft_printf(ft_strnjoin(3, FMT_RED, "%s\n", FMT_OFF), line);
+			else 
+				ft_printf("%s\n", line);
+			ch_print_stacks(a, b, ope);
+		}
 		free(line);
 	}
 	return (0);
 }
 
-int main(int argc, char **argv)
+int				main(int argc, char **argv)
 {
 	t_pile		a;
 	t_pile		b;
 	t_pile		opt;
 	int			check;
 
-	a = NEW_PILE;
-	b = NEW_PILE;
-	opt = NEW_PILE;
+	a = new_pile();
+	b = new_pile();
+	opt = new_pile();
 	check = 0;
 	if (argc > 1)
 	{
-		if ((check = ps_parse_arg(&a, ch_parse_options(argv, &opt), argc, argv)) != -1)
+		check = ps_parse_arg(&a, ch_parse_options(argv, &opt), argc, argv);
+		if (check != -1)
 			if ((check = ch_handle_lines(&a, &b, &opt)) != -1)
 			{
 				if (b.size == 0 && ps_is_sorted(&a))
@@ -137,9 +142,9 @@ int main(int argc, char **argv)
 				else
 					ft_printf("KO\n");
 			}
-        pile_clear(&a);
-        pile_clear(&b);
-        pile_clear(&opt);
+		pile_clear(&a);
+		pile_clear(&b);
+		pile_clear(&opt);
 	}
 	return (check);
 }

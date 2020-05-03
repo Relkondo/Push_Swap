@@ -26,7 +26,8 @@ BASE_SRC = ps_init \
           ps_index \
           ps_small \
           ps_pile \
-          ps_pop
+          ps_pop \
+          ps_helper
 
 S_PATH = src/
 H_PATH = includes/
