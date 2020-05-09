@@ -1,0 +1,3592 @@
+Failed test: TEST: cat testfiles/pbpapa | checker 1 2 3 (OK)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker 1 2 3 4 5 6 7 8 9 10 (OK)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/pbpapa | checker  (OK)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/pbpapa | checker 1 3 2 (KO)
+1d0
+< KO
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/pbpapa | checker r g # (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/empty | checker 0 (OK)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/empty | checker 0 1 2 (OK)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/empty | checker -5 -4 -3 (OK)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/empty | checker -7374 -4324 -33 (OK)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/empty | checker 4 6 7 (OK)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/pb | checker 4 6 7 (KO)
+1d0
+< KO
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/pbpbpb | checker 4 6 7 (KO)
+1d0
+< KO
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/empty | checker 0 3 2 (KO)
+1d0
+< KO
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/0_8_1.inst | checker 0 (OK)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/0_8_1.inst | checker 1 (OK)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/0_8_1.inst | checker -1 (OK)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/0_8_1.inst | checker 2147483647 (OK)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/0_8_1.inst | checker -2147483648 (OK)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker -2147483648 2147483647 (OK)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/pbpapa | checker 2147483647 -2147483648 (KO)
+1d0
+< KO
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/example.inst | checker 2 1 3 6 5 8 (OK)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/0_8_1.inst | checker 0 1 2 3 4 5 6 7 (KO)
+1d0
+< KO
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/0_8_1.inst | checker 7 1 3 2 4 0 6 5 (OK)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/empty | checker  (OK)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/empty | checker 1 u 5 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker  1 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker  1 2 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker 3  3 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker  3 3 3 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker  99 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker  0 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker 1 9 2 7 4 +-8 3 5 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker 1 9 2 7 4 -+8 3 5 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker 1 9 2 7 4 ++8 3 5 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker 1 9 2 7 4 --8 3 5 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker 1 9 2 7 4 -8+ 3 5 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker 1 9 2 7 4 8+ 3 5 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker 1 9 2 7 4 -8- 3 5 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker 1 9 2 7 4 +8- 3 5 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker 1 9 2 7 4 -8v 3 5 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker 1 9 2 7 4 +- 3 5 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker 1 9 2 7 4 + 3 5 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker 1 9 2 7 4 - 3 5 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker 1 9 2 7 4 -+ 3 5 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker 1 9 2 7 4 '' 3 5 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker 1 9 2 7 4 ' ' 3 5 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker 1 9 2 7 4 '-2 ' 3 5 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker 1 9 2 7 4 873487357468265487265842562534 3 5 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker 1 9 2 7 4 -873487357468265487265842562534 3 5 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker 1 9 2 7 4 873487357468265487265842562534b 3 5 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat /dev/urandom | checker  (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat /dev/random | checker  (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat /dev/urandom | checker  (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat /dev/random | checker  (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat /dev/zero | checker  (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat /dev/urandom | checker  (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/invalid1.inst | checker 1 9 2 5 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/invalid2.inst | checker 1 9 2 7 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/invalid2.inst | checker 0 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/invalid3.inst | checker 2 7 4 6 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/invalid4.inst | checker 2 7 4 6 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/sa_nonl.inst | checker 1 0 2 3 4 5 6 7 (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/pbpapa | checker  (OK)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker  (OK)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/pbpapa | checker  (KO)
+1d0
+< KO
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker  (KO)
+1d0
+< KO
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/rarra | checker  (KO)
+1d0
+< KO
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/pbpapa | checker  A (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/random1338.inst | checker  (KO)
+1d0
+< KO
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/random1338.inst | checker  (KO)
+1d0
+< KO
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/random1338.inst | checker  c (Error)
+1c1
+< Error
+---
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/lotsof_ra.inst | checker 1 2 (OK)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/lotsof_ra.inst | checker 1 2 3 4 (OK)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: cat testfiles/lotsof_ra.inst | checker -4 -3 -2 -1 (OK)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 165: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap NOTHING (NOTHING)
+0a1
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap NOTHING (NOTHING)
+0a1
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap NOTHING (NOTHING)
+0a1
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap NOTHING (NOTHING)
+0a1
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap NOTHING (NOTHING)
+0a1
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap NOTHING (NOTHING)
+0a1
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap NOTHING (NOTHING)
+0a1
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap Error (NOTHING)
+1c1
+< Error
+---
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap Error (NOTHING)
+1c1
+< Error
+---
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap Error (NOTHING)
+1c1
+< Error
+---
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap Error (NOTHING)
+1c1
+< Error
+---
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap Error (NOTHING)
+1c1
+< Error
+---
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap Error (NOTHING)
+1c1
+< Error
+---
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap Error (NOTHING)
+1c1
+< Error
+---
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap Error (NOTHING)
+1c1
+< Error
+---
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap Error (NOTHING)
+1c1
+< Error
+---
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap Error (NOTHING)
+1c1
+< Error
+---
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap Error (NOTHING)
+1c1
+< Error
+---
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap Error (NOTHING)
+1c1
+< Error
+---
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap Error (NOTHING)
+1c1
+< Error
+---
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap Error (NOTHING)
+1c1
+< Error
+---
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap Error (NOTHING)
+1c1
+< Error
+---
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap Error (NOTHING)
+1c1
+< Error
+---
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap Error (NOTHING)
+1c1
+< Error
+---
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap Error (NOTHING)
+1c1
+< Error
+---
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap Error (NOTHING)
+1c1
+< Error
+---
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap Error (NOTHING)
+1c1
+< Error
+---
+> ./testerizer.sh: line 170: ./copyed_project/push_swap: No such file or directory
+Failed test: TEST: push_swap on 2 ints shuffled 2 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 2 ints shuffled 4 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 2 ints shuffled 8 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 2 ints shuffled 16 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 2 ints shuffled 32 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 2 ints shuffled 64 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 2 ints shuffled 128 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 2 ints shuffled 256 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 2 ints shuffled 512 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 4 ints shuffled 2 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 4 ints shuffled 4 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 4 ints shuffled 8 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 4 ints shuffled 16 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 4 ints shuffled 32 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 4 ints shuffled 64 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 4 ints shuffled 128 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 4 ints shuffled 256 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 4 ints shuffled 512 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 8 ints shuffled 2 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 8 ints shuffled 4 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 8 ints shuffled 8 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 8 ints shuffled 16 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 8 ints shuffled 32 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 8 ints shuffled 64 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 8 ints shuffled 128 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 8 ints shuffled 256 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 8 ints shuffled 512 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 16 ints shuffled 2 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 16 ints shuffled 4 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 16 ints shuffled 8 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 16 ints shuffled 16 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 16 ints shuffled 32 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 16 ints shuffled 64 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 16 ints shuffled 128 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 16 ints shuffled 256 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 16 ints shuffled 512 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 32 ints shuffled 2 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 32 ints shuffled 4 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 32 ints shuffled 8 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 32 ints shuffled 16 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 32 ints shuffled 32 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 32 ints shuffled 64 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 32 ints shuffled 128 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 32 ints shuffled 256 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 32 ints shuffled 512 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 64 ints shuffled 2 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 64 ints shuffled 4 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 64 ints shuffled 8 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 64 ints shuffled 16 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 64 ints shuffled 32 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 64 ints shuffled 64 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 64 ints shuffled 128 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 64 ints shuffled 256 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 64 ints shuffled 512 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 128 ints shuffled 2 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 128 ints shuffled 4 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 128 ints shuffled 8 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 128 ints shuffled 16 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 128 ints shuffled 32 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 128 ints shuffled 64 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 128 ints shuffled 128 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 128 ints shuffled 256 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 128 ints shuffled 512 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 256 ints shuffled 2 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 256 ints shuffled 4 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 256 ints shuffled 8 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 256 ints shuffled 16 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 256 ints shuffled 32 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 256 ints shuffled 64 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 256 ints shuffled 128 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 256 ints shuffled 256 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 256 ints shuffled 512 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 512 ints shuffled 2 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 512 ints shuffled 4 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 512 ints shuffled 8 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 512 ints shuffled 16 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 512 ints shuffled 32 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 512 ints shuffled 64 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 512 ints shuffled 128 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 512 ints shuffled 256 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 512 ints shuffled 512 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 2 ints shuffled 2 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 2 ints shuffled 6 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 2 ints shuffled 18 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 2 ints shuffled 54 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 2 ints shuffled 162 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 2 ints shuffled 486 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 6 ints shuffled 2 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 6 ints shuffled 6 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 6 ints shuffled 18 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 6 ints shuffled 54 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 6 ints shuffled 162 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 6 ints shuffled 486 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 18 ints shuffled 2 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 18 ints shuffled 6 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 18 ints shuffled 18 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 18 ints shuffled 54 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 18 ints shuffled 162 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 18 ints shuffled 486 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 54 ints shuffled 2 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 54 ints shuffled 6 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 54 ints shuffled 18 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 54 ints shuffled 54 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 54 ints shuffled 162 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 54 ints shuffled 486 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 162 ints shuffled 2 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 162 ints shuffled 6 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 162 ints shuffled 18 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 162 ints shuffled 54 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 162 ints shuffled 162 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 162 ints shuffled 486 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 486 ints shuffled 2 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 486 ints shuffled 6 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 486 ints shuffled 18 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 486 ints shuffled 54 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 486 ints shuffled 162 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 486 ints shuffled 486 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 2 ints shuffled 2 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 2 ints shuffled 4 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 2 ints shuffled 8 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 2 ints shuffled 16 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 2 ints shuffled 32 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 2 ints shuffled 64 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 2 ints shuffled 128 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 4 ints shuffled 2 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 4 ints shuffled 4 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 4 ints shuffled 8 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 4 ints shuffled 16 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 4 ints shuffled 32 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 4 ints shuffled 64 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 4 ints shuffled 128 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 8 ints shuffled 2 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 8 ints shuffled 4 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 8 ints shuffled 8 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 8 ints shuffled 16 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 8 ints shuffled 32 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 8 ints shuffled 64 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 8 ints shuffled 128 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 16 ints shuffled 2 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 16 ints shuffled 4 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 16 ints shuffled 8 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 16 ints shuffled 16 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 16 ints shuffled 32 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 16 ints shuffled 64 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 16 ints shuffled 128 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 32 ints shuffled 2 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 32 ints shuffled 4 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 32 ints shuffled 8 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 32 ints shuffled 16 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 32 ints shuffled 32 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 32 ints shuffled 64 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 32 ints shuffled 128 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 64 ints shuffled 2 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 64 ints shuffled 4 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 64 ints shuffled 8 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 64 ints shuffled 16 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 64 ints shuffled 32 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 64 ints shuffled 64 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 64 ints shuffled 128 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 128 ints shuffled 2 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 128 ints shuffled 4 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 128 ints shuffled 8 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 128 ints shuffled 16 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 128 ints shuffled 32 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 128 ints shuffled 64 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 128 ints shuffled 128 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 8 ints shuffled -1 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 16 ints shuffled -1 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 32 ints shuffled -1 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 8 ints shuffled -1 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 16 ints shuffled -1 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 100 ints shuffled -1 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 16 ints shuffled -1 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: TEST: push_swap on 32 ints shuffled -1 times?
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 175: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 2 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 2 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 2 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 2 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 2 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 2 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 2 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 2 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 3 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 3 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 3 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 3 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 3 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 3 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 3 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 3 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 5 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 4 5 -1 0)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 5 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 12 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 50 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 50 3 1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 99 100 -1 0)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 -1 0)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 r20)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 100 1 r-20)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 99 100 -1 r-20)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 99 100 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 99 100 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 99 100 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 99 100 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 99 100 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 99 100 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 99 100 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 99 100 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 99 100 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 99 100 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 100 3 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 0)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 r20)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 500 1 r-20)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 r-20)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 499 500 -1 10)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator -4 500 3 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 1000 1 4)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 1000 1 4)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 1000 1 4)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 1000 1 4)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 1000 1 4)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 1000 1 4)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 1000 1 4)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 1000 1 4)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 1000 1 16)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 1000 1 16)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 1000 1 16)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 1000 1 16)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 1000 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 1000 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 1000 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory
+Failed test: push_swap 28158(./generator 0 1000 1 -1)
+1d0
+< OK
+0a1
+> ./testerizer.sh: line 196: ./copyed_project/checker: No such file or directory

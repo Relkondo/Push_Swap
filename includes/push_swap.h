@@ -6,7 +6,7 @@
 /*   By: scoron <scoron@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 06:29:12 by scoron            #+#    #+#             */
-/*   Updated: 2020/05/03 19:18:42 by scoron           ###   ########.fr       */
+/*   Updated: 2020/05/09 19:04:49 by scoron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -125,6 +125,8 @@ void			pile_popback(t_pile *self, size_t len);
 int				pile_popindex(t_pile *self, size_t index, size_t len);
 t_pile			new_pile();
 int				*pile_get(t_pile *p, size_t i);
+int				ps_is_int(char *str);
+int				ps_already_exist(t_pile *v, int int_arg);
 int				*pile_end(t_pile *p);
 int				pile_offset(int i);
 void			print_blue(void);
