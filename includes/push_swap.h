@@ -17,7 +17,7 @@
 # define OPT_V 0
 # define OPT_C 1
 # define OPT_A 2
-# define PILE_INITIAL_SIZE 16
+# define PILE_INITIAL_SIZE 64
 # define PILE_FACTOR 2
 
 # define FMT_OFF "\033[0m"

@@ -15,7 +15,11 @@
 void	ps_push_swap_init(t_pile *a, t_pile *b)
 {
 	if (ps_is_sorted(a))
+	{	
+		pile_clear(a);
+		pile_clear(b);
 		return ;
+	}
 	ps_split_atob(a, b, ps_get_average(a), a->size);
 	ps_push_swap(a, b);
 	if (ps_get_size(a, ps_get_max(a)) >= 20)
@@ -31,7 +35,11 @@ void	ps_push_swap_init(t_pile *a, t_pile *b)
 void	ps_push_swap_small(t_pile *a, t_pile *b)
 {
 	if (ps_is_sorted(a))
+	{	
+		pile_clear(a);
+		pile_clear(b);
 		return ;
+	}
 	if (a->size > 4)
 		ps_small_split(a, b);
 	ps_small_sort(a, 1);

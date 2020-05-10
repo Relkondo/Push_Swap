@@ -43,7 +43,7 @@ int				ps_is_int(char *str)
 		sign = 1;
 	if (*str == '-' || *str == '+')
 		str++;
-	while (*str)
+	while (*str > '\0')
 	{
 		if (!ft_isdigit(*str))
 			return (0);

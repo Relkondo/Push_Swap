@@ -59,8 +59,6 @@ all: $(NAME_CH) $(NAME_PS)
 
 check: check_leak check_error check_ko check_ok check_pw
 
-check2: check_error check_ko check_ok check_pw
-
 check_leak:
 	valgrind ./push_swap 2>&1 | grep lost
 	valgrind ./push_swap "1 2" 2>&1 | grep lost
@@ -95,21 +93,21 @@ check_error:
 	./push_swap -2147483649 2>&1 | cat -e
 	./push_swap 2>&1 | cat -e
 
-check_ko: $(NAME_CH)
+check_ko:
 	echo "sa\npb\nrrr" | ./checker 0 9 1 8 2 7 3 6 4 5
 	echo "sa\npb\nrrr" | ./checker "3 2 5 1"
 
-check_ok: $(NAME_CH) $(NAME_PS)
-	echo "\0" | ./checker 0 1 2
+check_ok:
 	echo "pb\nra\npb\nra\nsa\nra\npa\npa" | ./checker 0 9 1 8 2
 	echo "sa" | ./checker 1 0 2
+	cat /dev/null | ./checker 0 1 2
 
 check_pw:
 	./push_swap 42
 	./push_swap 0 1 2 3
 	./push_swap 0 1 2 3 4 5 6 7 8 9
-	ARG="2 1 0"; ./push_swap $$ARG | ./checker -t $$ARG
-	ARG="1 5 2 4 3"; ./push_swap $$ARG | ./checker -t $$ARG
+	ARG="2 1 0"; ./push_swap $$ARG | ./checker $$ARG
+	ARG="1 5 2 4 3"; ./push_swap $$ARG | ./checker $$ARG
 	ARG=`ruby -e "puts (1..5).to_a.shuffle.join(' ')"`; ./push_swap $$ARG | ./checker $$ARG
 	ARG=`ruby -e "puts (1..5).to_a.shuffle.join(' ')"`; ./push_swap $$ARG | wc -l
 	ARG=`ruby -e "puts (1..100).to_a.shuffle.join(' ')"`; ./push_swap $$ARG | ./checker $$ARG

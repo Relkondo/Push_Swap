@@ -102,7 +102,8 @@ static int		ch_handle_lines(t_pile *a, t_pile *b, t_pile *opt)
 	{
 		if (check == -1 || ch_check_line(line) == 0)
 		{
-			ft_dprintf(2, "Error\n");
+			//ft_printf("check : %d\n", check);
+			write(2, "Error\n", 6);
 			free(line);
 			return (-1);
 		}

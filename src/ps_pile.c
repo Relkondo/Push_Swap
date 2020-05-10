@@ -64,17 +64,18 @@ int		pile_resize(t_pile *self, size_t new_size)
 	return (0);
 }
 
+
 int		pile_reserve(t_pile *self, size_t size)
 {
 	const size_t	total_size = size + self->size;
-	size_t			new_size;
+	size_t			new_max;
 
 	if (total_size > self->max)
 	{
-		new_size = (self->max > 0 ? self->max : PILE_INITIAL_SIZE);
-		while (new_size < total_size)
-			new_size *= PILE_FACTOR;
-		return (pile_resize(self, new_size));
+		new_max = (self->max > 0 ? self->max : PILE_INITIAL_SIZE);
+		while (new_max < total_size)
+			new_max *= PILE_FACTOR;
+		return (pile_resize(self, new_max));
 	}
 	return (0);
 }

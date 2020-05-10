@@ -12,23 +12,32 @@
 
 #include "push_swap.h"
 
+int			intro_parse(t_pile *a, t_pile *b, int argc, char **argv)
+{
+	if (ps_parse_arg(a, 1, argc, argv) == -1)
+	{
+		pile_clear(a);
+		return (0);
+	}
+	if (ps_parse_arg(b, 1, argc, argv) == -1)
+	{
+		pile_clear(b);
+		return (0);
+	}
+	return (1);
+}
+
 int			main(int argc, char **argv)
 {
 	t_pile	a;
 	t_pile	b;
-	int		i;
 
 	if (argc < 2)
 		return (0);
 	a = new_pile();
 	b = new_pile();
-	i = 1;
-	if (ps_parse_arg(&a, i, argc, argv) == -1 ||
-		ps_parse_arg(&b, i, argc, argv) == -1)
-	{
-		pile_clear(&a);
+	if (intro_parse(&a, &b, argc, argv) == 0)
 		return (0);
-	}
 	ps_sort(&b, 0, b.size - 1);
 	ps_index(&a, &b);
 	if (a.size > 5)
