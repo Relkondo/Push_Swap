@@ -6,7 +6,7 @@
 /*   By: scoron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/23 17:54:28 by scoron            #+#    #+#             */
-/*   Updated: 2020/05/09 20:56:41 by scoron           ###   ########.fr       */
+/*   Updated: 2020/05/09 21:06:43 by scoron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ char			findlastchar(char *res, char lastchar)
 	return (last);
 }
 
-char			*ft_check_if_join(char *res, int fd, int checkread)
+char			*ft_check_if_join(char *res, int fd, int *checkread)
 {
 	if (res == NULL)
 		return (ft_joinfree_ps(res, fd, checkread));
