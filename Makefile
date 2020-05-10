@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    MakefileOld                                        :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: scoron <scoron@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/03/03 12:40:23 by scoron            #+#    #+#              #
-#    Updated: 2020/05/09 19:05:13 by scoron           ###   ########.fr        #
+#    Updated: 2020/05/09 22:08:17 by scoron           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,11 @@ O_PATH = obj/
 L_PATH = libft/
 
 LIBFT = $(addprefix $(S_PATH), $(L_PATH))
-FLAGS = -Wall -Wextra -Werror -fsanitize=address
+CFLAGS = -Wall -Wextra -fsanitize=address,undefined -g3
+ifneq ($(err), no)
+    CFLAGS += -Werror
+endif
+
 CC = clang
 
 SRC:=$(addprefix $(S_PATH),$(addsuffix .c,$(BASE_SRC)))
@@ -47,40 +51,43 @@ OBJ:=$(addprefix $(O_PATH),$(addsuffix .o,$(BASE_SRC)))
 OBJ_CH:=$(addprefix $(O_PATH),$(addsuffix .o,$(MAIN_CH)))
 OBJ_PS:=$(addprefix $(O_PATH),$(addsuffix .o,$(MAIN_PS)))
 
-RED		=	\033[0;31m
-GREEN	=	\033[0;32m
-NC		=	\033[0m
+RED        =    \033[0;31m
+GREEN    =    \033[0;32m
+NC        =    \033[0m
 
 all: $(NAME_CH) $(NAME_PS)
 
-$(NAME_CH): lib $(OBJ) $(OBJ_CH)
-	@echo "$(GREEN)compiling $@...$(NC)"
-	@$(CC) -o $(NAME_CH) $(OBJ) $(OBJ_CH) $(FLAGS) -I $(L_PATH)$(H_PATH) -L $(LIBFT) -lft
-	@echo "$(GREEN)$@ is ready$(NC)"
+$(NAME_CH): $(LIBFT)/libft.a $(OBJ) $(OBJ_CH)
+    echo "$(GREEN)compiling $@...$(NC)"
+    $(CC) -o $(NAME_CH) $(OBJ) $(OBJ_CH) $(CFLAGS) -I $(L_PATH)$(H_PATH) -L $(LIBFT) -lft
+    echo "$(GREEN)$@ is ready$(NC)"
 
-$(NAME_PS): lib $(OBJ) $(OBJ_PS)
-	@echo "$(GREEN)compiling $@...$(NC)"
-	@$(CC) -o $(NAME_PS) $(OBJ) $(OBJ_PS) $(FLAGS) -I $(L_PATH)$(H_PATH) -L $(LIBFT) -lft
-	@echo "$(GREEN)$@ is ready$(NC)"
+$(NAME_PS): $(LIBFT)/libft.a $(OBJ) $(OBJ_PS)
+    echo "$(GREEN)compiling $@...$(NC)"
+    $(CC) -o $(NAME_PS) $(OBJ) $(OBJ_PS) $(CFLAGS) -I $(L_PATH)$(H_PATH) -L $(LIBFT) -lft
+    echo "$(GREEN)$@ is ready$(NC)"
 
 $(O_PATH)%.o: $(S_PATH)%.c includes/$(HEADER)
-	@mkdir -p $(O_PATH)
-	@$(CC) $(FLAGS) -I $(H_PATH) -c $< -o $@
+    mkdir -p $(O_PATH)
+    $(CC) $(CFLAGS) -I $(H_PATH) -c $< -o $@
 
-lib :
-	@make -C $(LIBFT)
+$(LIBFT)/libft.a: FORCE
+    $(MAKE) -C $(LIBFT)
+
+FORCE:
 
 clean:
-	@echo "$(RED)deleting objects...$(NC)"
-	@make -C $(LIBFT) clean
-	@/bin/rm -rf $(O_PATH)
+    echo "$(RED)deleting objects...$(NC)"
+    $(MAKE) -C $(LIBFT) clean
+    $(RM) -R $(O_PATH)
 
 fclean : clean
-	@echo "$(RED)deleting both executables...$(NC)"
-	@make -C $(LIBFT) fclean
-	@/bin/rm -f $(NAME_CH)
-	@/bin/rm -f $(NAME_PS)
+    echo "$(RED)deleting both executables...$(NC)"
+    make -C $(LIBFT) fclean
+    $(RM) $(NAME_CH)
+    $(RM) $(NAME_PS)
 
-re: fclean all
+re: fclean
+    $(MAKE)
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re FORCE
