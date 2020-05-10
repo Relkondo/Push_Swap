@@ -103,7 +103,7 @@ $(NAME) : $(OBJS)
 		@ranlib $(NAME)
 
 %.o : %.c
-	@clang -Wall -Wextra -Werror -Iincludes -c $< -o $@
+	@clang -Wall -Wextra -Werror -fsanitize=address -Iincludes -c $< -o $@
 
 clean :
 	@/bin/rm -f $(OBJS)
