@@ -15,7 +15,7 @@
 void	ps_push_swap_init(t_pile *a, t_pile *b)
 {
 	if (ps_is_sorted(a))
-	{	
+	{
 		pile_clear(a);
 		pile_clear(b);
 		return ;
@@ -35,7 +35,7 @@ void	ps_push_swap_init(t_pile *a, t_pile *b)
 void	ps_push_swap_small(t_pile *a, t_pile *b)
 {
 	if (ps_is_sorted(a))
-	{	
+	{
 		pile_clear(a);
 		pile_clear(b);
 		return ;

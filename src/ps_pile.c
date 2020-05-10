@@ -44,9 +44,9 @@ void	pile_clear(t_pile *self)
 		free(self->content);
 	}
 	else if (self->content != 0)
-		{
-			free(self->content);
-		}
+	{
+		free(self->content);
+	}
 }
 
 int		pile_resize(t_pile *self, size_t new_size)
@@ -63,7 +63,6 @@ int		pile_resize(t_pile *self, size_t new_size)
 	self->max = new_size;
 	return (0);
 }
-
 
 int		pile_reserve(t_pile *self, size_t size)
 {

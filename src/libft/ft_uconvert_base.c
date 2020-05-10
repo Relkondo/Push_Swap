@@ -16,7 +16,7 @@
 static int		ft_check_error_b(char *base)
 {
 	int			i;
-	int 		j;
+	int			j;
 
 	i = 0;
 	if (base == NULL)
@@ -40,7 +40,7 @@ static int		ft_check_error_b(char *base)
 
 static int		ft_find(char *str, char *base, unsigned long long i, int j)
 {
-	int 		r;
+	int			r;
 
 	if (j == 0)
 	{
