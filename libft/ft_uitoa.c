@@ -6,7 +6,7 @@
 /*   By: scoron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 17:52:30 by scoron            #+#    #+#             */
-/*   Updated: 2020/05/09 13:44:38 by scoron           ###   ########.fr       */
+/*   Updated: 2020/05/09 20:53:05 by scoron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,3 @@ char		*ft_uitoa(unsigned long long n)
 	res = ft_putint(res, n, len);
 	return (res);
 }
-

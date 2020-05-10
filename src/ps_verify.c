@@ -6,13 +6,13 @@
 /*   By: scoron <scoron@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 06:24:37 by scoron            #+#    #+#             */
-/*   Updated: 2020/05/09 19:59:08 by scoron           ###   ########.fr       */
+/*   Updated: 2020/05/09 20:58:35 by scoron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int				ft_count_args(const char *str, char c)
+int			ft_count_args(const char *str, char c)
 {
 	int			i;
 	int			arg_count;
@@ -38,11 +38,11 @@ int				ft_count_args(const char *str, char c)
 char		**ch_split(char *to_split)
 {
 	if (to_split == NULL || *to_split == '\0')
-		return NULL;
-	return ft_strsplit(to_split, ' ');	
+		return (NULL);
+	return (ft_strsplit(to_split, ' '));
 }
 
-int				ch_do_parse(t_pile *a, int i, char **av, int only_one)
+int			ch_do_parse(t_pile *a, int i, char **av, int only_one)
 {
 	int			int_arg;
 
@@ -58,7 +58,7 @@ int				ch_do_parse(t_pile *a, int i, char **av, int only_one)
 	return (1);
 }
 
-int				ps_parse_arg(t_pile *a, int i, int ac, char **av)
+int			ps_parse_arg(t_pile *a, int i, int ac, char **av)
 {
 	int			only_one;
 	int			ret;
@@ -75,10 +75,10 @@ int				ps_parse_arg(t_pile *a, int i, int ac, char **av)
 	}
 	while (i < ac)
 	{
-		if(ch_do_parse(a, i, av, only_one) == -1)
+		if (ch_do_parse(a, i, av, only_one) == -1)
 			return (-1);
 		i++;
 	}
 	(only_one ? ft_strlst_free(av) : 0);
-	return ret;
+	return (ret);
 }

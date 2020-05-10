@@ -6,7 +6,7 @@
 /*   By: scoron <scoron@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 06:15:13 by scoron            #+#    #+#             */
-/*   Updated: 2020/05/09 19:16:33 by scoron           ###   ########.fr       */
+/*   Updated: 2020/05/09 21:00:25 by scoron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int				ch_parse_options(char **argv, t_pile *options)
 	while (possible_options[k++])
 		pile_addall(options, &data, 1);
 	i = 0;
-	while (argv[++i] && ft_strlen(argv[i]) > 1 && argv[i][0] == '-') 
+	while (argv[++i] && ft_strlen(argv[i]) > 1 && argv[i][0] == '-')
 	{
 		j = 0;
 		while (argv[i][++j])
@@ -100,7 +100,6 @@ static int		ch_handle_lines(t_pile *a, t_pile *b, t_pile *opt)
 	line = NULL;
 	while ((check = get_next_line_ps(0, &line)) != 0)
 	{
-		//ft_printf("line : %s, first char : %c, value int : %d, check : %d\n", line, *line, *line, check);
 		if (check == -1 || ch_check_line(line) == 0)
 		{
 			ft_dprintf(2, "Error\n");
@@ -117,7 +116,6 @@ static int		ch_handle_lines(t_pile *a, t_pile *b, t_pile *opt)
 		}
 		free(line);
 	}
-	//ft_printf("last line : %s, first char : %c, value int : %d\n", line, *line, *line);
 	free(line);
 	return (0);
 }

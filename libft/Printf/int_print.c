@@ -6,7 +6,7 @@
 /*   By: scoron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 17:52:30 by scoron            #+#    #+#             */
-/*   Updated: 2020/05/09 13:54:58 by scoron           ###   ########.fr       */
+/*   Updated: 2020/05/09 20:50:51 by scoron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,10 @@ static void		putint(char *res, long long n, size_t len)
 
 void			print_nu(t_ftp *p, long long n)
 {
-	char		res[21];
-	size_t		len;
-	int			pre;
-	int			i;
+	char				res[21];
+	size_t				len;
+	int					pre;
+	int					i;
 
 	i = 0;
 	len = 1;
@@ -54,7 +54,7 @@ static void		uputint_base(char *res, unsigned long long n, char *base_to)
 {
 	int					count;
 	int					bs;
-	unsigned long long			tmp;
+	unsigned long long	tmp;
 
 	bs = 0;
 	count = 1;
@@ -76,10 +76,10 @@ static void		uputint_base(char *res, unsigned long long n, char *base_to)
 
 void			print_ba(t_ftp *p, unsigned long long n, char *base, char c)
 {
-	char		res[23];
-	int			pre;
-	size_t		len;
-	int			i;
+	char				res[23];
+	int					pre;
+	size_t				len;
+	int					i;
 
 	i = 0;
 	pre = p->preci;

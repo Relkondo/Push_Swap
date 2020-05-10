@@ -6,7 +6,7 @@
 /*   By: scoron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/12 16:11:18 by scoron            #+#    #+#             */
-/*   Updated: 2020/05/09 19:31:28 by scoron           ###   ########.fr       */
+/*   Updated: 2020/05/09 20:52:10 by scoron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	ft_strlst_free(char **strlst)
 
 	i = -1;
 	if (strlst == NULL)
-		return;
+		return ;
 	while (strlst[++i] != NULL)
 		free(strlst[i]);
 	free(strlst);

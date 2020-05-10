@@ -6,7 +6,7 @@
 /*   By: scoron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/23 17:54:28 by scoron            #+#    #+#             */
-/*   Updated: 2020/05/09 18:38:18 by scoron           ###   ########.fr       */
+/*   Updated: 2020/05/09 20:56:41 by scoron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static char		*ft_joinfree_ps(char *res, int fd, int *checkread)
 	*checkread = 1;
 	tmp = 0;
 	if (!(buf = (char *)malloc(sizeof(char) * (BUFF_SIZE + 1))))
-		return NULL;
+		return (NULL);
 	*buf = 0;
 	while (!(ft_strchr(buf, '\n')) && *checkread > 0)
 	{
@@ -44,18 +44,26 @@ char			findlastchar(char *res, char lastchar)
 {
 	char		last;
 
-	//ft_printf("2res: %s, lastchar: %d\n", res, lastchar);
-	if (res ==  NULL && lastchar == '\0')
-		return '\n';
-	//ft_printf("3res: %s, lastchar: %d\n", res, lastchar);
+	if (res == NULL && lastchar == '\0')
+		return ('\n');
 	if (*res == '\0')
-		return lastchar;
-	while(*res) 
+		return (lastchar);
+	while (*res)
 	{
 		last = *res;
 		res++;
 	}
-	return last;
+	return (last);
+}
+
+char			*ft_check_if_join(char *res, int fd, int checkread)
+{
+	if (res == NULL)
+		return (ft_joinfree_ps(res, fd, checkread));
+	else if (!(ft_strchr(res, '\n')))
+		return (ft_joinfree_ps(res, fd, checkread));
+	else
+		return (res);
 }
 
 int				get_next_line_ps(const int fd, char **line)
@@ -73,19 +81,14 @@ int				get_next_line_ps(const int fd, char **line)
 		res != NULL ? free(res) : 0;
 		return (-1);
 	}
-	if (res == NULL)
-		res = ft_joinfree_ps(res, fd, checkread);
-	else if (!(ft_strchr(res, '\n')))
-		res = ft_joinfree_ps(res, fd, checkread);
+	res = ft_check_if_join(res, fd, checkread);
 	if (*checkread < 0)
 	{
 		res != NULL ? free(res) : 0;
 		return (-1);
 	}
 	lastchar = findlastchar(res, lastchar);
-	//ft_printf("res: %s, lastchar: %d\n", res, findlastchar(res, lastchar));
-	if (*checkread == 0 && lastchar != '\n')
-		*checkread = -1;
+	*checkread = (*checkread == 0 && lastchar != '\n') ? -1 : *checkread;
 	*line = ft_strcutuntil(&res, '\n');
 	(*checkread <= 0 && res != NULL) ? free(res) : 0;
 	return (*checkread > 0 ? 1 : *checkread);
