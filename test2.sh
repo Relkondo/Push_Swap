@@ -4,11 +4,11 @@ sred=0
 
 if [ "$#" -lt 3 ] || [ "$#" -gt 4 ]
 then
-	echo "\nusage: test.sh [-full] arg1 arg2 arg3\n"
-	echo "       arg1  - start number (random value from .. ).\n"
-	echo "       arg2  - finish number ( .. random value to).\n"
-	echo "       arg3  - how many times run a test.\n"
-	echo "       -full - push_swap tests, checker tests, leaks tests, author file test.\n\n"
+	printf "\nusage: test.sh [-full] arg1 arg2 arg3\n"
+	printf "       arg1  - start number (random value from .. ).\n"
+	printf "       arg2  - finish number ( .. random value to).\n"
+	printf "       arg3  - how many times run a test.\n"
+	printf "       -full - push_swap tests, checker tests, leaks tests, author file test.\n\n"
 
 	exit
 fi
@@ -32,7 +32,7 @@ sp=( Loading. lOading.. loAding... loaDing.... loadIng..... loadiNg...... loadin
 echo ' '
 for i in "${sp[@]}\n"
 do
-    echo "\r\t\t\t\t\033[K\033[32m$i\033[m"
+    printf "\r\t\t\t\t\033[K\033[32m$i\033[m"
     sleep 0.2
 done
 
@@ -43,9 +43,9 @@ then
     echo "\t\t\t----------------------"
 	if [ "$(cat author &> hello; echo $?)" = "0" ]
 	then
-		echo "\033[32mauthor file found:\t$(cat author)     ✅ \033[m\n"
+		printf "\033[32mauthor file found:\t$(cat author)     ✅ \033[m\n"
 	else
-		echo "\033[31mauthor file not found     ❌    \033[m\n"
+		printf "\033[31mauthor file not found     ❌    \033[m\n"
 	fi
 	/bin/rm -rf hello
 fi
@@ -56,85 +56,85 @@ then
 echo "\n\t\t\t 🤹🏻‍♀️  CHECKER TEST 🤹🏻‍♀️"
 echo "\t\t\t -------------------"
 echo "Error management:"
-echo "test 1: "
-if [ "$(echo '' | ./checker kek 2>&1 | grep "Error" | wc -l)" -eq 1 ]
+printf "test 1: "
+if [ "$(printf '' | ./checker kek 2>&1 | grep "Error" | wc -l)" -eq 1 ]
 then
 echo "✅  - ./checker (non numeric parameter) (instr: none)"
 else
 echo "❌  - ./checker (non numeric parameter) (instr: none)"
 fi
-echo "test 2: "
-if [ "$(echo '' | ./checker 1 2 3 4 5 6 7 8 1 2>&1 | grep "Error" | wc -l)" -eq 1 ]
+printf "test 2: "
+if [ "$(printf '' | ./checker 1 2 3 4 5 6 7 8 1 2>&1 | grep "Error" | wc -l)" -eq 1 ]
 then
 echo "✅  - ./checker (duplicate numeric parameter) (instr: none)"
 else
 echo "❌  - ./checker (duplicate numeric parameter) (instr: none)"
 fi
-echo "test 3: "
-if [ "$(echo '' | ./checker 2147483648 2>&1 | grep "Error" | wc -l)" -eq 1 ]
+printf "test 3: "
+if [ "$(printf '' | ./checker 2147483648 2>&1 | grep "Error" | wc -l)" -eq 1 ]
 then
 echo "✅  - ./checker MAX_INT+1(2147483648) (instr: none)"
 else
 echo "❌  - ./checker MAX_INT+1(2147483648) (instr: none)"
 fi
-echo "test 4: "
-if [ "$(echo '' | ./checker -2147483649 2>&1 | grep "Error" | wc -l)" -eq 1 ]
+printf "test 4: "
+if [ "$(printf '' | ./checker -2147483649 2>&1 | grep "Error" | wc -l)" -eq 1 ]
 then
 echo "✅  - ./checker MIN_INT-1(2147483649) (instr: none)"
 else
 echo "❌  - ./checker MIN_INT-1(2147483649) (instr: none)"
 fi
-echo "test 5: "
-if [ "$(echo '' | ./checker | wc -l)" -eq 0 ]
+printf "test 5: "
+if [ "$(printf '' | ./checker | wc -l)" -eq 0 ]
 then
 echo "✅  - ./checker none (instr: none)"
 else
 echo "❌  - ./checker none (instr: none)"
 fi
-echo "test 6: "
-if [ "$(echo 'kek' | ./checker 4 1 2 2>&1 | grep "Error" | wc -l)" -eq 1 ]
+printf "test 6: "
+if [ "$(printf 'kek' | ./checker 4 1 2 2>&1 | grep "Error" | wc -l)" -eq 1 ]
 then
 echo "✅  - ./checker (action doesn't exist) (instr: none)"
 else
 echo "❌  - ./checker (action doesn't exist) (instr: none)"
 fi
-echo "test 7: "
-if [ "$(echo 'ra  ' | ./checker 4 1 2 2>&1 | grep "Error" | wc -l)" -eq 1 ]
+printf "test 7: "
+if [ "$(printf 'ra  ' | ./checker 4 1 2 2>&1 | grep "Error" | wc -l)" -eq 1 ]
 then
 echo "✅  - ./checker (action with two space after) (instr: none)"
 else
 echo "❌  - ./checker (action with two space after) (instr: none)"
 fi
-echo "test 8: "
-if [ "$(echo '  ra' | ./checker 4 1 2 2>&1 | grep "Error" | wc -l)" -eq 1 ]
+printf "test 8: "
+if [ "$(printf '  ra' | ./checker 4 1 2 2>&1 | grep "Error" | wc -l)" -eq 1 ]
 then
 echo "✅  - ./checker (action with two space before) (instr: none)"
 else
 echo "❌  - ./checker (action with two space before) (instr: none)"
 fi
-echo "test 9: "
-if [ "$(echo '' | ./checker - 2>&1 | grep "Error" | wc -l)" -eq 1 ]
+printf "test 9: "
+if [ "$(printf '' | ./checker - 2>&1 | grep "Error" | wc -l)" -eq 1 ]
 then
 echo "✅  - ./checker (only minus sign as parameter) (instr: none)"
 else
 echo "❌  - ./checker (only minus sign as parameter) (instr: none)"
 fi
-echo "test 10: "
-if [ "$(echo '' | ./checker + 2>&1 | grep "Error" | wc -l)" -eq 1 ]
+printf "test 10: "
+if [ "$(printf '' | ./checker + 2>&1 | grep "Error" | wc -l)" -eq 1 ]
 then
 echo "✅  - ./checker (only plus sign as parameter) (instr: none)"
 else
 echo "❌  - ./checker (only plus sign as parameter) (instr: none)"
 fi
-echo "test 11: "
-if [ "$(echo '' | ./checker -0 0 2>&1 | grep "Error" | wc -l)" -eq 1 ]
+printf "test 11: "
+if [ "$(printf '' | ./checker -0 0 2>&1 | grep "Error" | wc -l)" -eq 1 ]
 then
 echo "✅  - ./checker (duplicate zeros) (instr: none)"
 else
 echo "❌  - ./checker (duplicate zeros) (instr: none)"
 fi
-echo "test 12: "
-if [ "$(echo '' | ./checker 18446744073709551616 2>&1 | grep "Error" | wc -l)" -eq 1 ]
+printf "test 12: "
+if [ "$(printf '' | ./checker 18446744073709551616 2>&1 | grep "Error" | wc -l)" -eq 1 ]
 then
 echo "✅  - ./checker (int64_t double overloaded (to zero)) (instr: none)"
 else
@@ -142,15 +142,15 @@ echo "❌  - ./checker (int64_t double overloaded (to zero)) (instr: none)"
 fi
 
 echo "\nFalse tests:"
-echo "test 1: "
-if [ "$(echo "sa\npb\nrrr" | ./checker 0 9 1 8 2 7 3 6 4 5  | grep "KO" | wc -l)" -eq 1 ]
+printf "test 1: "
+if [ "$(printf "sa\npb\nrrr\n" | ./checker 0 9 1 8 2 7 3 6 4 5  | grep "KO" | wc -l)" -eq 1 ]
 then
 echo "✅  - ./checker 0 9 1 8 2 7 3 6 4 5 (instr: sa pb rrr)"
 else
 echo "❌  - ./checker 0 9 1 8 2 7 3 6 4 5 (instr: sa pb rrr)"
 fi
-echo "test 2: "
-if [ "$(echo "pb\nra\nsa\npa\nrb\nrrb\nrra\n" | ./checker 4 1 6 2 7 3 | grep "KO" | wc -l)" -eq 1 ]
+printf "test 2: "
+if [ "$(printf "pb\nra\nsa\npa\nrb\nrrb\nrra\n" | ./checker 4 1 6 2 7 3 | grep "KO" | wc -l)" -eq 1 ]
 then
 echo "✅  - ./checker 4 1 6 2 7 3 (instr: pb ra sa pa rb rrb rra)"
 else
@@ -158,15 +158,15 @@ echo "❌  - ./checker 4 1 6 2 7 3 (instr: pb ra sa pa rb rrb rra)"
 fi
 
 echo "\nRight tests:"
-echo "test 1: "
-if [ "$(echo '' | ./checker 0 1 2 | grep "OK" | wc -l)" -eq 1 ]
+printf "test 1: "
+if [ "$(printf '' | ./checker 0 1 2 | grep "OK" | wc -l)" -eq 1 ]
 then
 echo "✅  - ./checker 0 1 2 (instr: none)"
 else
 echo "❌  - ./checker 0 1 2 (instr: none)"
 fi
-echo "test 2: "
-if [ "$(echo "pb\nra\npb\nra\nsa\nra\npa\npa\n" | ./checker 0 9 1 8 2 | grep "OK" | wc -l)" -eq 1 ]
+printf "test 2: "
+if [ "$(printf "pb\nra\npb\nra\nsa\nra\npa\npa\n" | ./checker 0 9 1 8 2 | grep "OK" | wc -l)" -eq 1 ]
 then
 echo "✅  - ./checker 0 9 1 8 2 (instr: pb ra pb ra sa ra pa pa)"
 else
@@ -174,15 +174,15 @@ echo "❌  - ./checker 0 9 1 8 2 (instr: pb ra pb ra sa ra pa pa)"
 fi
 
 echo "\nRandom tests:"
-echo "test 1: "
-if [ "$(echo "pb\npb" | ./checker 1 2 3 4 5 | grep "KO" | wc -l)" -eq 1 ]
+printf "test 1: "
+if [ "$(printf "pb\npb\n" | ./checker 1 2 3 4 5 | grep "KO" | wc -l)" -eq 1 ]
 then
 echo "✅  - ./checker 1 2 3 4 5 (instr: pb pb)"
 else
 echo "❌  - ./checker 1 2 3 4 5 (instr: pb pb)"
 fi
-echo "test 2: "
-if [ "$(echo "ra\nra\nrra\nrra" | ./checker 1 2 3 4 5 | grep "OK" | wc -l)" -eq 1 ]
+printf "test 2: "
+if [ "$(printf "ra\nra\nrra\nrra\n" | ./checker 1 2 3 4 5 | grep "OK" | wc -l)" -eq 1 ]
 then
 echo "✅  - ./checker 1 2 3 4 5 (instr: ra ra rra rra)"
 else
@@ -192,21 +192,21 @@ fi
 echo "\n\t\t\t 🤹🏻‍♀️  PUSH_SWAP TEST 🤹🏻‍♀️"
     echo "\t\t         --------------------"
 echo "Identity test:"
-echo "test 1: "
+printf "test 1: "
 if [ "$(./push_swap 42 | wc -l)" -eq 0 ]
 then
 echo "✅  - ./push_swap 42 (should display nothing)"
 else
 echo "❌  - ./push_swap 42 (should display nothing)"
 fi
-echo "test 2: "
+printf "test 2: "
 if [ "$(./push_swap 0 1 2 3 | wc -l)" -eq 0 ]
 then
 echo "✅  - ./push_swap 0 1 2 3 (should display nothing)"
 else
 echo "❌  - ./push_swap 0 1 2 3 (should display nothing)"
 fi
-echo "test 3: "
+printf "test 3: "
 if [ "$(./push_swap 0 1 2 3 4 5 6 7 8 9 | wc -l)" -eq 0 ]
 then
 echo "✅  - ./push_swap 0 1 2 3 4 5 6 7 8 9 (should display nothing)"
