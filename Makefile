@@ -6,7 +6,7 @@
 #    By: scoron <scoron@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/03/03 12:40:23 by scoron            #+#    #+#              #
-#    Updated: 2020/05/09 22:08:17 by scoron           ###   ########.fr        #
+#    Updated: 2020/05/09 22:24:43 by scoron           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -89,5 +89,68 @@ fclean : clean
 
 re: fclean
 	$(MAKE)
+
+check: check_leak check_error check_ko check_ok check_pw
+
+check2: check_error check_ko check_ok check_pw
+
+check_leak:
+	valgrind ./push_swap 2>&1 | grep lost
+	valgrind ./push_swap "1 2" 2>&1 | grep lost
+	valgrind ./push_swap "2 2" 2>&1 | grep lost
+	valgrind ./push_swap "a 2" 2>&1 | grep lost
+	valgrind ./push_swap "2147483649" 2>&1 | grep lost
+	echo "sa" | valgrind ./checker 2>&1 | grep lost
+	echo "sa" | valgrind ./checker 1 2 2>&1 | grep lost
+	echo "sa" | valgrind ./checker "2 2" 2>&1 | grep lost
+	echo "sa" | valgrind ./checker "a 2" 2>&1 | grep lost
+	echo "sa" | valgrind ./checker "2147483649" 2>&1 | grep lost
+	echo "sa " | valgrind ./checker "1 2" 2>&1 | grep lost
+	echo "  sa" | valgrind ./checker "1 2" 2>&1 | grep lost
+	echo "sa" | valgrind ./checker -v "1 2" 2>&1 | grep lost
+	echo "sa" | valgrind ./checker -vact "1 2" 2>&1 | grep lost
+	echo "sa" | valgrind ./checker -g "1 2" 2>&1 | grep lost
+	ARG=`ruby -e "puts (1..30).to_a.shuffle.join(' ')"`; ./push_swap $$ARG | valgrind ./checker -t $$ARG 2>&1 | grep lost
+	ARG=`ruby -e "puts (1..30).to_a.shuffle.join(' ')"`; valgrind ./push_swap $$ARG 2>&1 | grep lost
+
+check_error:
+	./checker a 2>&1 | cat -e
+	./checker 1 1 2>&1 | cat -e
+	./checker 2147483649 2>&1 | cat -e
+	./checker 2>&1 | cat -e
+	echo "swap" | ./checker "1 2" 2>&1 | cat -e
+	echo "sa  " | ./checker "1 2" 2>&1 | cat -e
+	echo "  sa" | ./checker "1 2" 2>&1 | cat -e
+	./checker -g 2>&1 | cat -e
+	./checker -catgv 2>&1 | cat -e
+	./push_swap a 2>&1 | cat -e
+	./push_swap 1 1 2>&1 | cat -e
+	./push_swap -2147483649 2>&1 | cat -e
+	./push_swap 2>&1 | cat -e
+
+check_ko: $(NAME_CH)
+	echo "sa\npb\nrrr" | ./checker 0 9 1 8 2 7 3 6 4 5
+	echo "sa\npb\nrrr" | ./checker "3 2 5 1"
+
+check_ok: $(NAME_CH) $(NAME_PS)
+	echo "\0" | ./checker 0 1 2
+	echo "pb\nra\npb\nra\nsa\nra\npa\npa" | ./checker 0 9 1 8 2
+	echo "sa" | ./checker 1 0 2
+
+check_pw:
+	./push_swap 42
+	./push_swap 0 1 2 3
+	./push_swap 0 1 2 3 4 5 6 7 8 9
+	ARG="2 1 0"; ./push_swap $$ARG | ./checker -t $$ARG
+	ARG="1 5 2 4 3"; ./push_swap $$ARG | ./checker -t $$ARG
+	ARG=`ruby -e "puts (1..5).to_a.shuffle.join(' ')"`; ./push_swap $$ARG | ./checker $$ARG
+	ARG=`ruby -e "puts (1..5).to_a.shuffle.join(' ')"`; ./push_swap $$ARG | wc -l
+	ARG=`ruby -e "puts (1..100).to_a.shuffle.join(' ')"`; ./push_swap $$ARG | ./checker $$ARG
+	ARG=`ruby -e "puts (1..100).to_a.shuffle.join(' ')"`; ./push_swap $$ARG | wc -l
+	ARG=`ruby -e "puts (1..500).to_a.shuffle.join(' ')"`; ./push_swap $$ARG | ./checker $$ARG
+	ARG=`ruby -e "puts (1..500).to_a.shuffle.join(' ')"`; ./push_swap $$ARG | wc -l
+
+check_bonus:
+	ARG=`ruby -e "puts (1..30).to_a.shuffle.join(' ')"`; ./push_swap $$ARG | ./checker -vca $$ARG
 
 .PHONY: all clean fclean re FORCE
