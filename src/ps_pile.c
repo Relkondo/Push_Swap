@@ -43,6 +43,10 @@ void	pile_clear(t_pile *self)
 		self->size = 0;
 		free(self->content);
 	}
+	else if (self->content != 0)
+		{
+			free(self->content);
+		}
 }
 
 int		pile_resize(t_pile *self, size_t new_size)

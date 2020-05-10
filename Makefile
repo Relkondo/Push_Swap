@@ -57,39 +57,6 @@ NC = \033[0m
 
 all: $(NAME_CH) $(NAME_PS)
 
-$(NAME_CH): $(LIBFT)/libft.a $(OBJ) $(OBJ_CH)
-	echo "$(GREEN)compiling $@...$(NC)"
-	$(CC) -o $(NAME_CH) $(OBJ) $(OBJ_CH) $(CFLAGS) -I $(L_PATH)$(H_PATH) -L $(LIBFT) -lft
-	echo "$(GREEN)$@ is ready$(NC)"
-
-$(NAME_PS): $(LIBFT)/libft.a $(OBJ) $(OBJ_PS)
-	echo "$(GREEN)compiling $@...$(NC)"
-	$(CC) -o $(NAME_PS) $(OBJ) $(OBJ_PS) $(CFLAGS) -I $(L_PATH)$(H_PATH) -L $(LIBFT) -lft
-	echo "$(GREEN)$@ is ready$(NC)"
-
-$(O_PATH)%.o: $(S_PATH)%.c includes/$(HEADER)
-	mkdir -p $(O_PATH)
-	$(CC) $(CFLAGS) -I $(H_PATH) -c $< -o $@
-
-$(LIBFT)/libft.a: FORCE
-	$(MAKE) -C $(LIBFT)
-
-FORCE:
-
-clean:
-	echo "$(RED)deleting objects...$(NC)"
-	$(MAKE) -C $(LIBFT) clean
-	$(RM) -R $(O_PATH)
-
-fclean : clean
-	echo "$(RED)deleting both executables...$(NC)"
-	make -C $(LIBFT) fclean
-	$(RM) $(NAME_CH)
-	$(RM) $(NAME_PS)
-
-re: fclean
-	$(MAKE)
-
 check: check_leak check_error check_ko check_ok check_pw
 
 check2: check_error check_ko check_ok check_pw
@@ -152,5 +119,38 @@ check_pw:
 
 check_bonus:
 	ARG=`ruby -e "puts (1..30).to_a.shuffle.join(' ')"`; ./push_swap $$ARG | ./checker -vca $$ARG
+
+$(NAME_CH): $(LIBFT)/libft.a $(OBJ) $(OBJ_CH)
+	echo "$(GREEN)compiling $@...$(NC)"
+	$(CC) -o $(NAME_CH) $(OBJ) $(OBJ_CH) $(CFLAGS) -I $(L_PATH)$(H_PATH) -L $(LIBFT) -lft
+	echo "$(GREEN)$@ is ready$(NC)"
+
+$(NAME_PS): $(LIBFT)/libft.a $(OBJ) $(OBJ_PS)
+	echo "$(GREEN)compiling $@...$(NC)"
+	$(CC) -o $(NAME_PS) $(OBJ) $(OBJ_PS) $(CFLAGS) -I $(L_PATH)$(H_PATH) -L $(LIBFT) -lft
+	echo "$(GREEN)$@ is ready$(NC)"
+
+$(O_PATH)%.o: $(S_PATH)%.c includes/$(HEADER)
+	mkdir -p $(O_PATH)
+	$(CC) $(CFLAGS) -I $(H_PATH) -c $< -o $@
+
+$(LIBFT)/libft.a: FORCE
+	$(MAKE) -C $(LIBFT)
+
+FORCE:
+
+clean:
+	echo "$(RED)deleting objects...$(NC)"
+	$(MAKE) -C $(LIBFT) clean
+	$(RM) -R $(O_PATH)
+
+fclean : clean
+	echo "$(RED)deleting both executables...$(NC)"
+	make -C $(LIBFT) fclean
+	$(RM) $(NAME_CH)
+	$(RM) $(NAME_PS)
+
+re: fclean
+	$(MAKE)
 
 .PHONY: all clean fclean re FORCE
